@@ -1,0 +1,209 @@
+/* General styles resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+ul,
+ol {
+    list-style: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Header Section */
+
+header {
+    background-color: #7030cc;
+    font-size: 2rem;
+    padding: 10rem 0;
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 20rem;
+}
+.list-item {
+    display: inline-block;
+    margin-left: 4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.active {
+    color: #15c4d4;
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 1.4rem 2.8rem;
+    background-color: #15c4d4;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.hero-text {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    color: #f3f3f3;
+    line-height: 1.4;
+}
+
+.hero-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.1rem;
+    margin-bottom: 5%;
+}
+
+.hero-text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Features Section */
+
+section[aria-label='features'] {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 6rem;
+    font-size: 1.6rem;
+    background-color: #f1f1f1ca;
+}
+
+.features-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+.features-text i {
+    font-size: large;
+    transform: rotatey(180deg);
+}
+
+i:nth-of-type(1) {
+    color: #ffb429;
+}
+
+i:nth-of-type(2) {
+    color: #72df05;
+}
+
+i:nth-of-type(3) {
+    color: #0c8ef8;
+}
+
+.features-text h3 {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 2%;
+}
+
+.features-text p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
+    margin-left: 3rem;
+}
+
+.customer-feature {
+    padding: 4% 10%;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 1.25rem;
+    background-color: #f1f1f1ca;
+}
+
+.customer-feature h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.customer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap !important;
+}
+
+.customer-content {
+    margin-top: 3.5rem;
+    width: 22%;
+    border-radius: 15px;
+    box-shadow: 5px 2px 10px 2px #bdbdbd84;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+    background-color: #0c8ef8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.customer-text {
+    margin-top: 1rem;
+    padding: 7%;
+}
+
+.customer-text h2 {
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+/* @media only screen and (max-device-width: 50em) {
+    .features-wrapper {
+        flex-direction: column;
+    }
+    .features-names {
+        flex-direction: column;
+    }
+} */
